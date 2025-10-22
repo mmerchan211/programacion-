@@ -1,4 +1,4 @@
-package varios; 
+package esquema_piramide; 
 public class Piramide {
     public static void main(String[] args) {
         int filas = 5; 
