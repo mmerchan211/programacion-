@@ -1,0 +1,13 @@
+package proyecto2;
+
+import javax.swing.JOptionPane;
+
+public class Ejemplo {
+	public static void main(String[]args) {
+		JOptionPane.showMessageDialog(null,"Bienvenido.");
+		
+	String nombre = JOptionPane.showInputDialog(null, "ingrese su nombre", "Datos de la persona", JOptionPane.QUESTION_MESSAGE);
+	System.out.println(nombre);
+	}
+
+}
