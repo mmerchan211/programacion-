@@ -1,9 +1,12 @@
 def calcular_media(lista):
-    if not lista:
-        print("La lista está vacía.")
-        return
+    numeros = input(" Ingrese varios numeros separados por comas:")
+    lista = [float(x.strip() for x in numeros.split(",")]
+    if len (lista) == 0:
+        print("No ingresaste ningun numero valido")
+    else: 
     media = sum(lista) / len(lista)
-    print("La media es:", media)
+    print("La media de los numeros es: {media}")
 
-# ejemplo
-calcular_media([10, 18, 23, 30])
+# llamar la función 
+calcular_media()
+
