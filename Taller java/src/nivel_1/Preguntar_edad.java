@@ -1,6 +1,6 @@
 package nivel_1;
 
-import java.util.Scanner;
+import java.util.Scanner; //leer datos de entrada del usuario 
 
 public class Preguntar_edad {
     public static void edad() {
@@ -19,3 +19,4 @@ public class Preguntar_edad {
         edad();
     }
 }
+
