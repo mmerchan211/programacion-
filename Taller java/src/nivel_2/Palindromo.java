@@ -1,17 +1,22 @@
 package nivel_2;
 
 public class Palindromo {
-    public static boolean palindromo(String palabra) {
-        StringBuilder sb = new StringBuilder();
-        for (char c : palabra.toLowerCase().toCharArray()) {
-            if (Character.isLetterOrDigit(c)) sb.append(c);
+     public static void palindromo() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese una palabra para verificar si es palíndromo: ");
+        String palabra = sc.nextLine();
+
+        String invertida = new StringBuilder(palabra).reverse().toString();
+
+        if (palabra.equalsIgnoreCase(invertida)) {
+            System.out.println(" La palabra es un palíndromo.");
+        } else {
+            System.out.println("La palabra no es un palíndromo.");
         }
-        String s = sb.toString();
-        String rev = new StringBuilder(s).reverse().toString();
-        return s.equals(rev);
     }
 
     public static void main(String[] args) {
-        System.out.println(palindromo("Somos o no somos")); 
+        palindromo();
     }
 }
+
