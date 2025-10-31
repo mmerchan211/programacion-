@@ -1,14 +1,16 @@
-def calcular_mediana(*numeros):
-    if not numeros:
-        return None
-    lista = sorted(numeros)
+def calcular_mediana(*args):
+    if len(args) == 0:
+        raise ValueError("Se requieren al menos un número.")
+    lista = sorted(args)
     n = len(lista)
-    mitad = n // 2
-    if n % 2 == 0:
-        return (lista[mitad - 1] + lista[mitad]) / 2
+    mid = n // 2
+    if n % 2 == 1:
+        return lista[mid]
     else:
-        return lista[mitad]
+        return (lista[mid - 1] + lista[mid]) / 2
 
-
-# Ejemplo de uso:
-print("Mediana:", calcular_mediana(25, 5, 15, 30, 35, 40))  
+# main
+if __name__ == "__main__":
+    entrada = input(" Ingrese números separados por comas para calcular la mediana: ")
+    nums = [float(x.strip()) for x in entrada.split(",") if x.strip() != ""]
+    print("Mediana:", calcular_mediana(*nums))
