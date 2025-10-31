@@ -11,7 +11,7 @@ public class Promedio {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Ingresa números separados por comas para calcular el promedio: ");
+        System.out.print("Ingrese números separados por comas para calcular el promedio: ");
         String entrada = sc.nextLine();
         String[] partes = entrada.split(",");
         double[] nums = new double[partes.length];
@@ -20,3 +20,4 @@ public class Promedio {
         sc.close();
     }
 }
+
