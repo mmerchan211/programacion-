@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Multiplicar_lista {
-    public static List<Double> multiplicarLista(List<Double> lista, double numero) {
+    public static List<Double> Multiplicar_lista(List<Double> lista, double numero) {
         List<Double> res = new ArrayList<>();
         for (Double v : lista) res.add(v * numero);
         return res;
@@ -26,5 +26,6 @@ public class Multiplicar_lista {
         sc.close();
     }
 }
+
 
 
