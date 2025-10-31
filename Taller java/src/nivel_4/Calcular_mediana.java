@@ -1,21 +1,25 @@
 package nivel_4;
-
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Calcular_mediana {
-    public static Double calcular_mediana(double... numeros) {
-        if (numeros.length == 0) return null;
-        Arrays.sort(numeros);
-        int n = numeros.length;
-        int mitad = n / 2;
-        if (n % 2 == 0) {
-            return (numeros[mitad - 1] + numeros[mitad]) / 2.0;
-        } else {
-            return numeros[mitad];
-        }
+    public static double calcular_mediana(double... nums) {
+        if (nums.length == 0) throw new IllegalArgumentException("Se requieren al menos un número.");
+        double[] copia = Arrays.copyOf(nums, nums.length);
+        Arrays.sort(copia);
+        int n = copia.length;
+        if (n % 2 == 1) return copia[n / 2];
+        else return (copia[n/2 - 1] + copia[n/2]) / 2.0;
     }
 
     public static void main(String[] args) {
-        System.out.println("Mediana: " + calcular_mediana(4, 8, 12, 16, 20, 24));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese números separados por comas para calcular la mediana: ");
+        String entrada = sc.nextLine();
+        String[] partes = entrada.split(",");
+        double[] nums = new double[partes.length];
+        for (int i = 0; i < partes.length; i++) nums[i] = Double.parseDouble(partes[i].trim());
+        System.out.println("Mediana: " + calcular_mediana(nums));
+        sc.close();
     }
 }
