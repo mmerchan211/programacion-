@@ -1,6 +1,10 @@
 def multiplicar_lista(lista, numero):
-    nueva_lista = [x * numero for x in lista]
-    return nueva_lista
+    return [x * numero for x in lista]
 
-
-print("Nueva lista:", multiplicar_lista([87, 15, 8], 4))  
+# main
+if __name__ == "__main__":
+    entrada = input("Ingrese números separados por comas (lista): ")
+    lista = [float(x.strip()) for x in entrada.split(",") if x.strip() != ""]
+    factor = float(input("Ingrese el número por el cual multiplicar la lista: "))
+    resultado = multiplicar_lista(lista, factor)
+    print(" Lista multiplicada:", resultado)
