@@ -1,0 +1,50 @@
+Mapa inicial:
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - T - - - - 
+- - - - - - - - 
+- - - - - - E - 
+
+Movimiento a: (4,6) - pasos: 1 - distancia restante: 4
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - T - - - - 
+- - - - - - E - 
+- - - - - - . - 
+
+Movimiento a: (3,6) - pasos: 2 - distancia restante: 3
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - T - - E - 
+- - - - - - . - 
+- - - - - - . - 
+
+Movimiento a: (3,5) - pasos: 3 - distancia restante: 2
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - T - E . - 
+- - - - - - . - 
+- - - - - - . - 
+
+Movimiento a: (3,4) - pasos: 4 - distancia restante: 1
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - T E . . - 
+- - - - - - . - 
+- - - - - - . - 
+
+Movimiento a: (3,3) - pasos: 5 - distancia restante: 0
+- - - - - - - - 
+- - - - - - - - 
+- - - - - - - - 
+- - - E . . . - 
+- - - - - - . - 
+- - - - - - . - 
+
+
+¡Tesoro encontrado en 5 pasos! Posición: (3,3)
